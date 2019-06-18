@@ -239,7 +239,7 @@ function searchChannel() {
     var average_comments ;
     $.ajax({
             type: 'GET',
-            url: "/getData",
+            url: "/getData",  //change here the put the API link + channelName
             success:function(data){
                 influencer_name=data[0].page_data.username;
                 business_category_name=data[0].page_data.business_category_name;
