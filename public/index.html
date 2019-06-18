@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container-fluid position-absolute padding">
+        <div class="row padding-temp">
+            <div class="col-sm-4 text-center">
+                <a class="" href="#" >
+                    <img  width="230" height="50" src="https://www.connecsi.com/wp-content/uploads/2018/12/Logo_icon.white_-e1545960005952.png" class="custom-logo" alt="Connecsi">
+                </a>
+            </div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 text-center ">
+                <a class="" href="#">
+                    <h5 class="login-signup" style="color: white">Login/Signup</h5>
+                </a>
+            </div>
+        </div>
+        <div class="row padding text-center ">
+            <div class="col-12 header-1 padding-temp">
+                <h2>INFLUENCER ANALYZER</h2>
+                <p>A quick analysis of your favorite influencer</p>
+            </div>
+            <div class="col-12 header-1 padding-temp">
+                <h4>Enter below the Instagram username you want to check</h4>
+            </div>
+        </div>
+        <div class="row padding ">
+            <form class="form-inline" onsubmit="return searchChannel()">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+        <div class="container message">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <div class="errorMessage">
+                    <h3></h3>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <div class="data-display">
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4 influencer-name">
+                    <h3>No User</h3>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row text-center">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="container-fluid influence-data padding">
+                        <div class="box-1">
+                            <div class="influence-img">
+                                <img src="0.png" alt="">
+                                <div class="send-message">
+                                    <button class="btn btn-primary">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-2">
+                            <div class="influence-rating">
+                                <h4>0%</h4>
+                                <h6>Business account</h6>
+                                <div class="rating-bar">
+                                    <div class="container">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="4.75" aria-valuemin="0" aria-valuemax="5" style="width:5%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-3 influence-average">
+                            <div class="top-data">
+                                <div class="influence-followers">
+                                    <h3>-</h3>
+                                    <h6>Total followers</h6>
+                                </div>
+                                <div class="influence-average-views">
+                                    <h3>-</h3>
+                                    <h6>Avg Views</h6>
+                                </div>
+                            </div>
+                            <div class="bottom-data">
+                                <div class="influence-average-likes">
+                                    <h3>-</h3>
+                                    <h6>Avg Likes</h6>
+                                </div>
+                                <div class="influence-average-comments">
+                                    <h3>-</h3>
+                                    <h6>Avg Comments</h6>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row padding text-center chart-mine">
+                <div class="col-12">
+                    <canvas id="myChart" ></canvas>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/lodash/4.17.2/lodash.min.js'></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
