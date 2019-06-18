@@ -1,0 +1,9 @@
+########### how to setup the project#############
+
+1) Clone the repository.
+2) cd connecsi to get into repository.
+3) npm install ( to install all dependencies).
+4) In file script.js in /public/js/ folder change the api from /getData to connecsi api to get channel
+        url: "(connecsi/)"+channelName
+5) npm start.
+6) open the localhost at specified port.
